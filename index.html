@@ -5,14 +5,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My New Website</title>
+        <title>My Landing Page</title>
         <link rel="stylesheet" href="./assets/styles/style.css">
     </head>
 
     <body class="font-family">
     
-        <header>
-          <ul>
+        <header class="fixed-position">
+          <ul class="text-right">
             <li> <a href="https://github.com/karolinakulpinska/landing-page">Github</a></li>
             <li> <a href="#">Portfolio</a></li>
             <li> <a href="#contact">Contact</a></li>
@@ -21,29 +21,39 @@
 
         <main>
 
-          <h1>My new landing page</h1>
+          <h1 class="text-center">My Landing Page</h1>
           
           <figure>
-            <img src="./assets/imgs/IMG_7921.jpg" alt="Image of Luna" title="Image of Luna" class="img-center">
+            <img src="./assets/imgs/IMG_7921.jpg" alt="Image of Luna" title="Image of Luna" class="img-centered">
+            <figcaption class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
           </figure>
-          <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
           
-          <section id="contact">
-            <div>
-              <input type="text" name="" id="">
-            </div>
-            <div>
-              <input type="email" name="" id="">
-            </div>
-            <div>
-              <input type="button" value="">
-            </div>
-          </section>
+          <form id="contact" class="text-center">
+
+            <h2>Contact me</h2>
+            <br>
+
+            <label for="name">Your name:</label>
+              <section>
+                <input type="text" id="name" name="user-name">
+              </section>
+
+            <label for="email">Your email address:</label>
+              <section>
+                <input type="email" id="email" name="email">
+              </section>
+              <br>
+        
+              <section>
+                <button type="submit" id="button">Send</button>
+              </section>
+
+          </form>
 
         </main>
 
-        <footer>
-          <h5>© 2022 This is my footer.</h5>
+        <footer class="fixed-position">
+          <h5 class="text-center">© 2022 This is my footer.</h5>
         </footer>
 
     </body>

@@ -1,8 +1,10 @@
+/* Universal selector */
 * {
     margin: 0;
     padding: 0;
   }
 
+/* Element selectors */
   a, a:visited {
     text-decoration: none;
     color: bisque;
@@ -16,7 +18,6 @@
   header {
     background-color: olive;
     display: block;
-    position: fixed;
     top: 0;
     width: 100%;
     height: 35px;
@@ -28,12 +29,10 @@
   }
 
   footer {
-    position: fixed;
     bottom: 0;
     background-color: darkolivegreen;
     width: 100%;
     padding: 10px;
-    text-align: center;
     border-top: chocolate 2px solid;
   }
 
@@ -56,19 +55,48 @@
     margin-top: 60px;
     margin-bottom: 20px;
     color: brown;
-    text-align: center;
   }
 
   h5 {
     color: bisque;
   }
 
+/* Class selectors */
   .font-family {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
-  .img-center {
+  .img-centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .fixed-position {
+    position: fixed;
+  }
+
+  .form-center {
+    display: block;
+  }
+
+/* ID selectors */
+  #contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
   }
